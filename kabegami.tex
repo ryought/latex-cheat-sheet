@@ -1,0 +1,249 @@
+\documentclass[a4paper,9pt,landscape]{article}
+\usepackage{setspace}
+\setstretch{1}
+\usepackage{amsmath, amssymb}
+\usepackage{mathpazo}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{ascmac}
+\usepackage{bm}
+\usepackage{multicol}
+\usepackage[top=10truemm,bottom=10truemm,left=10truemm,right=10truemm]{geometry}
+
+%\newcommand{\hogenew}[1]{ aa \begin{verbatim} #1 \end{verbatim} }
+%\newcommand{\ccc}[1]{ \begin{verbatim} #1 \end{verbatim} $\pi$ }
+% \newcommand*{\cc}[1]{ \begin{verbatim} #1 \end{verbatim} $#1$ }
+% \newcommand{\xAlertC}[2][red]{{\color{#1}\Large #2}}
+
+%\newcommand{\startPair}{ \begin{table}[htbp] \begin{tabular}{ll}}
+%\newcommand{\finishPair}{\end{tabular} \end{table} }
+\newcommand{\startPair}{ \begin{center} \begin{tabular}{ll}}
+\newcommand{\finishPair}{\end{tabular} \end{center} }
+
+% \newcommand{\pair}[1]{\item[ ] $#1$ \ \texttt{\detokenize{#1}} }
+\newcommand{\pair}[1]{ $#1$ & \texttt{\detokenize{#1}}  \\}
+
+
+\begin{document}
+
+\begin{multicols}{5}
+
+% 1基本
+\startPair
+\pair{\frac{a}{b}}
+\pair{|x|}
+\pair{||x||}
+\pair{\left| a \right|}
+\pair{\lceil 2.5 \rceil}
+\pair{\lfloor 2.5 \rfloor}
+\pair{\langle a \rangle}
+
+
+\pair{\pm}
+\pair{\mp}
+\pair{\times}
+\pair{\ast}
+
+\pair{\exp(x)}
+\pair{\sqrt{x}}
+\pair{\sqrt[n]{x}}
+
+\pair{\log{2} x}
+\pair{\log x}
+\pair{\ln x}
+\pair{\lg x}
+
+\pair{\lim}
+\pair{\lim_{x \to \infty}}
+\pair{\liminf}
+\pair{\limsup}
+\pair{\varliminf}
+\pair{\varlimsup}
+\pair{\sup}
+\pair{\inf}
+
+\pair{\frac{dy}{dx}}
+\pair{ \partial x }
+\pair{ \Delta }
+\pair{ \nabla }
+
+\pair{ \int }
+\pair{ \iint_D }
+\pair{\oint}
+
+\pair{\max}
+\pair{\min}
+\pair{\arg\min}
+\pair{\arg\max}
+\pair{\inf}
+
+\pair{{}_n \mathrm{C}_k}
+\pair{\binom{n}{k}}
+\pair{\mathcal{F}}
+
+\pair{\sum_i}
+\pair{\prod_i}
+
+\finishPair
+
+
+% 数式装飾
+\startPair
+\pair{\hat{x}}
+\pair{\check{x}}
+\pair{\breve{x}}
+\pair{\acute{x}}
+\pair{\grave{x}}
+\pair{\tilde{x}}
+\pair{\bar{x}}
+\pair{\dot{x}}
+\pair{\ddot{x}}
+
+\pair{\overline{x+y}}
+\pair{\underline{x+y}}
+\pair{\widehat{xyz}}
+\pair{\widetilde{xyz}}
+\pair{\overbrace{x+y}}
+\pair{\underbrace{x+y}}
+
+\pair{\vec{a}}
+\pair{\overrightarrow{AB}}
+\pair{\bm{a}}
+\pair{\bm{A}^\top}
+\pair{\cdot}
+\pair{\times}
+\pair{\mathrm{det} A}
+\pair{\mathrm{tr} A}
+
+\pair{\angle}
+\pair{60^\circ}
+\pair{\overline{AB}}
+\pair{A \perp B}
+\pair{A \parallel B}
+
+\finishPair
+
+
+
+
+% 4関係
+\startPair
+
+\pair{\le}
+\pair{\leq}
+\pair{\ge}
+\pair{\geq}
+\pair{\ll}
+\pair{\gg}
+\pair{\prec}
+\pair{\succ}
+\pair{\preceq}
+\pair{\succeq}
+
+\pair{\propto}
+\pair{\equiv}
+\pair{\neq}
+\pair{\sim}
+\pair{\simeq}
+\pair{\cong}
+\pair{\doteq}
+\pair{\approx}
+\pair{\asymp}
+
+\pair{\vdash}
+\pair{\dashv}
+\pair{\models}
+
+
+
+\pair{\ldots}
+\pair{\cdots}
+\pair{\vdots}
+\pair{\cdot}
+\pair{\ddots}
+
+\finishPair
+
+
+% 5集合・論理
+\startPair
+
+\pair{\in}
+\pair{\ni}
+\pair{\notin}
+
+\pair{\cap}
+\pair{\cup}
+\pair{\sqcap}
+\pair{\sqcup}
+\pair{\bigcap_{i}}
+\pair{\bigcup_{i}}
+
+\pair{\subset}
+\pair{\supset}
+\pair{\subseteq}
+\pair{\supseteq}
+\pair{\sqsubset}
+\pair{\sqsupset}
+\pair{\sqsubseteq}
+\pair{\sqsupseteq}
+
+
+\pair{\land}
+\pair{\lor}
+\pair{\vee}
+\pair{\wedge}
+\pair{\bigvee_i}
+\pair{\bigwedge_i}
+\pair{\neg}
+\pair{\lnot}
+\pair{\forall}
+\pair{\exists}
+\pair{\top}
+\pair{\bot}
+
+\pair{\to}
+\pair{\gets}
+\pair{\Rightarrow}
+\pair{\uparrow}
+\pair{\downarrow}
+\pair{\leftrightarrow}
+\pair{\Leftrightarrow}
+\pair{\rightleftharpoons}
+\pair{\mapsto}
+\pair{\hookrightarrow}
+\pair{\rightharpoonup}
+\pair{\rightharpoondown}
+
+
+\finishPair
+
+
+
+% 6特殊記号
+\startPair
+
+\pair{\hbar}
+\pair{\infty}
+\pair{\Re}
+\pair{\Im}
+\pair{\emptyset}
+
+\pair{\dag}
+\pair{\ddag}
+\pair{\S}
+
+\pair{\epsilon}
+\pair{\varepsilon}
+\pair{\phi}
+\pair{\Phi}
+\pair{\varphi}
+
+\pair{\Box}
+\pair{\Diamond}
+\pair{\triangle}
+
+\finishPair
+
+
+\end{multicols}
+\end{document}
